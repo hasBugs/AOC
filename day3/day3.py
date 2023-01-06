@@ -9,16 +9,13 @@ for sack in lines:
     first, second = set(sack[length:]), set(sack[:length])
     
     for item in first:
-        items.append(item)
-
-    for item in second:
-        if(item in items):
+        if item in second:
             dups.append(item)
 
+# can write function that return the 1-26 and 27-52 for alphabets to avoid the below maps
 lowercase = [chr(x+97) for x in range(26)]
 uppercase = [chr(x+65) for x in range(26)]
 numbers = [x+1 for x in range(52)]
-
 alphabets = dict(zip(lowercase + uppercase, numbers))
 
 score = 0
