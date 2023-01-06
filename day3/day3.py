@@ -30,7 +30,7 @@ print(score)
 # part 2
  
 def commonChars(words):
-    check = list(words[0])
+    check = set(words[0])
     for word in words:
         newCheck = []
         for c in word:
