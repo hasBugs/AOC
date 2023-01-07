@@ -22,6 +22,8 @@ for line in lines:
     #     count2+=1
 
     # simplified
+    #     s1 ----- e1
+    # s2                e2
     if not (e1 < s2 or e2 < s1):
         count2 +=1   
 
